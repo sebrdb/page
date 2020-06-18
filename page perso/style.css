@@ -1,0 +1,141 @@
+/* style.css */
+/* Write some CSS below */
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+  background-color: rdg(230, 230, 230);
+  margin: 0px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+
+a {
+  color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+
+/* Custom class design */
+
+.btn-blue {
+	background-color: #23679b;
+	color: white;
+	padding: 16px 48px;
+	border-radius: 100px;
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.btn-blue:hover {
+  background-color: #003863;
+  color: white;
+  font-size: 20px;
+}
+
+.banner {
+	background-image: url(images/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding: 75px 0px;
+}
+
+.banner h1 {
+	font-size: 45px;
+}
+
+.banner p {
+	opacity: 0.7;
+	margin-bottom: 40px;
+	font-size: 26px;
+	color: white;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	padding: 35px;
+}
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  width: 200px;
+  text-align: center;
+  padding: 40px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white h3 {
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+
+
+
+
+
+
